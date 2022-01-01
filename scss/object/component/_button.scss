@@ -1,0 +1,79 @@
+.c-btn{
+    position: relative;
+    display: inline-block;
+    text-decoration: none !important;
+    padding: 10px 40px;
+    border: none;
+    vertical-align: middle; 
+    margin: 10px auto;
+    transition: all 0.3s;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.c-btn__reserve{
+    font-weight: 600;
+    background:#8090A6;
+    color: #E4EAF2;
+    flex-basis: 100%;
+
+    @include lg(){
+        -webkit-font-smoothing: initial;
+            display: block;
+            padding: $space_l;
+            text-align: center;
+            margin-top: $space_xxl;
+            background:#8090A6;
+            width: 200px;
+            font-weight: 100;
+            
+    }
+    
+
+    &:hover{
+        background: #51608C;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+.c-btn__slide{
+    font-weight: 600;
+    text-align: center;
+    flex-basis: 100%;
+    border: 1px solid black;
+    -webkit-font-smoothing: initial;
+            display: block;
+            text-align: center;
+            padding: 10px 60px;
+            margin-top: $space_xxl;
+            font-weight: 100;
+            background: white;
+            z-index: 1;
+
+
+    &::before{
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform .3s;
+        z-index: -1;
+    }
+
+        &:hover {
+            color: white;
+
+            &::before {
+            transform: none;
+
+        }
+    
+}
+}

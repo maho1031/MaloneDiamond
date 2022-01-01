@@ -1,0 +1,36 @@
+.p-newarrival__header{
+        @extend .content-width;
+    }
+.p-newarrival__container{
+        @extend .flex;
+        @extend .content-width;
+}
+
+.p-newarrival__title{
+        font-size: $font-size_l;
+        margin-bottom: $space_l;
+        text-align: center;
+    }
+
+.p-newarrival__img{
+        margin-right: 0;
+        height: 250px;
+        overflow: hidden;
+        margin-bottom: 5px;
+        border: 1px solid rgba(0,0,0,0.2);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+            & > img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                filter:  brightness(1.1); 
+            }
+
+    }
+
+    .p-newarrival__btn{
+        text-align: center;
+        flex-basis: 100%;
+    }

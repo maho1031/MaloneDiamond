@@ -1,0 +1,52 @@
+// ========================
+// 変数
+// ========================
+
+// ========================
+// layout
+// ========================
+$site-width: 980px;
+$ipad-width: 768px;
+$nav-height: 100px;
+$contentMaxWidth: 1070px;
+
+
+// ========================
+// font
+// ========================
+$font-color_default:#26221A;
+$font-color_title:#8090A6;
+
+$font-size_s: 12px;
+$font-size_m: 14px;
+$font-size_default: 16px;
+$font-size_l: 18px;
+$font-size_xl: 24px;
+$font-size_xxl: 30px;
+$font-size_3l: 38px;
+
+$font-family_default:'Open Sans','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+$font-family_logo:'Playfair Display', serif;
+
+
+// =========================
+// space
+// =========================
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+$space_3l: 40px;
+
+
+
+
+// マップ型変数を使うと便利
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 960px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;
+

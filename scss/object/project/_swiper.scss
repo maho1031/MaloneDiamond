@@ -1,0 +1,52 @@
+.hero{
+    overflow: hidden;
+    padding-top: 80px;
+
+    @include lg{
+        padding-top: 80px;
+    }
+
+    &__title{
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 22px;
+        z-index: 2;
+        font-family: $font-family_logo;
+        box-sizing: border-box;
+    }
+}
+.p-swiper-container {
+    width: 90%;
+    margin: auto;
+    overflow:visible !important;
+    
+}
+
+.swiper-slide{
+    height: 600px;
+
+    @include lg{
+        height: 500px;
+    }
+
+
+    & > img{
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 61, 125, 0.1);
+    }
+}

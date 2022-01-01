@@ -1,0 +1,41 @@
+.p-stores{
+    @extend .content-width;
+ }
+
+ .p-stores__inner{
+    @extend .flex;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+.p-stores__texts{
+    height: 150px;
+    padding: 10px;
+    background-color: rgba(18, 57, 105, 0.1);
+    margin-bottom: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.p-stores__map{
+    height: 350px;
+    box-shadow:1px 1px 5px #333;
+    transition: opacity 0.3s ease;
+    margin-top: 100px;
+
+
+    &:hover{
+        
+        opacity: 0.7;
+    }
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.p-stores__title{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.p-stores__description{
+    font-size: 14px;
+}

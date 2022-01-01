@@ -1,0 +1,56 @@
+.p-nav__menu-link{
+    color: $font-color_default;
+    text-decoration: none;
+    transition: .3s;
+    position: relative;
+    display: inline-block;
+
+
+  &::after{
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content:"";
+    width: 100%;
+    height: 1px;
+    background:#0D117F;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+    display: block;
+    z-index: 10;
+}
+}
+  .hero, .p-newarrival, .p-category, .p-about, .p-stores{
+    padding-bottom: 100px !important;
+  }
+  .hero__title{
+    font-size: 26px;
+  }
+
+  .c-main-title{
+    font-size: 30px;
+  }
+ 
+  .p-newarrival{
+    &__img{
+      height: 300px;
+    }
+    
+}
+.p-news__main{
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 15%;
+  width: 70%;
+  height: 240px;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+.p-news__date, .p-news__title{
+  font-size: 12px;
+}
+.p-about__inner{
+  padding: 15px;
+}

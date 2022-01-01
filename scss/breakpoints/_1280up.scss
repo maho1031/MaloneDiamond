@@ -1,0 +1,21 @@
+.p-swiper-container {
+    width: 90%;
+    margin: auto;
+    overflow:visible !important;
+    
+}
+
+.swiper-slide{
+    height: 700px;
+    overflow: hidden;
+}
+
+
+.newarrival{
+
+    &__item{
+            margin-right: 40px;
+            flex-basis: 30%;
+        }
+    
+}

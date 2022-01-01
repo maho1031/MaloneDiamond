@@ -1,0 +1,23 @@
+{
+  "name": "malonediamondo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
+    "swiper": "^6.3.5"
+  },
+  "devDependencies": {
+    "gulp-changed": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
+  }
+}
